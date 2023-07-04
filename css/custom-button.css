@@ -1,0 +1,17 @@
+/* red Button */
+.custom-button {
+  background-color: #713636; 
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  color: white;
+  padding: 15px 12px;
+  
+}
+
+.custom-button:hover {
+  opacity: 0.75;
+  color: #ffffff;
+}

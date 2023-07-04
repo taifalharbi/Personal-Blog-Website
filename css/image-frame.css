@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image-frame {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  padding: 5px;
+  background-color: #aaa;
+}
+  
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+  
+.container:hover .overlay {
+  opacity: 1;
+}
+  
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

@@ -1,0 +1,66 @@
+@import 'awesome-icons.css';
+@import 'nav-bar.css';
+@import 'profile.css';
+@import 'custom-button.css';
+@import 'image-frame.css';
+@import 'card.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.header {
+  font-size: 30px;
+  text-align: center;
+  color: #713636;
+  background: white;
+  display: grid;
+  grid-template-columns: none; 
+  grid-gap: 5px;
+}
+
+.footer { 
+  padding: 10px;
+  text-align: center;
+  background: #f1f1f1;
+  color: #713636;
+  margin-top: 10px; 
+  
+}
+
+
+.content {
+  float: left;
+  width: 75%;
+  display: grid;
+  grid-template-columns: none;
+  grid-gap: 40px; 
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .sidebar, .content {   
+    width: 100%;
+    padding: 0;
+  }
+}
